@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0); /* Adjust transparency here */
+  padding: 10px 20px;
+  position: fixed; /* Keeps the navbar fixed at the top */
+  width: 100%; /* Ensures the navbar spans the full width */
+  top: 0; /* Aligns the navbar at the top of the page */
+  z-index: 1000; /* Ensures the navbar stays above other content */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo a {
+  color: #d6c984;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-image {
+  width: 80px; /* Adjust the size of the logo as needed */
+  height: 80px;
+  margin-right: 10px; /* Space between logo and text */
+  padding-left: 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 20px;
+}
+/* Styles for the cart icon and count */
+.navbar-cart {
+  position: relative;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-input {
+  padding: 20px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+}
+
+.navbar-links li {
+  margin: 0 30px; /* Increased spacing between links */
+  position: relative; /* Required for positioning pseudo-elements */
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px; /* Adjusted font size */
+  position: relative; /* Required for positioning pseudo-elements */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Position it just below the text */
+  width: 100%;
+  height: 2px;
+  background: #ecec69; /* Color of the underline */
+  transform: scaleX(0);
+  transition: transform 0.3s ease; /* Smooth underline transition */
+  transform-origin: bottom right;
+}
+
+.navbar-links a:hover {
+  color: #ecec69; /* Color of the text on hover */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for better text visibility */
+}
+
+.navbar-links a:hover::after {
+  transform: scaleX(1); /* Expand the underline on hover */
+  transform-origin: bottom left;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.admin-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: white;
+  color: black;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 1000;
+  margin: 0 40px;
+  width: 150px;
+  height: 100px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}

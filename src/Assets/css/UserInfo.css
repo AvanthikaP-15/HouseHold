@@ -1,0 +1,89 @@
+/* src/Assets/css/UserInfo.css */
+.user-info {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f0f0f0; /* Ash background for the main container */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Dark grey text for general use */
+}
+
+.user-info h1 {
+  margin-bottom: 25px;
+  color: #003366; /* Blue heading */
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.table-container {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+  background-color: #fff; /* White table background */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th,
+.user-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0; /* Light ash border */
+  font-size: 16px;
+}
+
+.user-table th {
+  background-color: #003366; /* Blue header background */
+  color: #fff; /* White text */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.user-table tr {
+  transition: background-color 0.3s ease;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f4f4f4; /* Light ash for even rows */
+}
+
+.user-table tr:hover {
+  background-color: #e0e0e0; /* Slightly darker ash on hover */
+}
+
+.user-table td {
+  color: #333; /* Dark grey text for table cells */
+}
+
+.user-table .password-cell {
+  font-family: 'Courier New', Courier, monospace;
+  color: #666; /* Medium grey for password */
+  font-weight: bold;
+}
+
+.user-table td:first-child {
+  font-weight: bold;
+  color: #003366; /* Blue color for the first column */
+}
+
+.error-message {
+  text-align: center;
+  color: #d9534f; /* Red text for error */
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 18px;
+}

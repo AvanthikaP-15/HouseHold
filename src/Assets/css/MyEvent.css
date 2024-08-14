@@ -1,0 +1,63 @@
+/* Container styling */
+.my-events {
+  background-color: #f7f7f7; /* Light ash color for the container background */
+  padding: 30px; /* Increased padding for more space */
+  border-radius: 12px; /* Rounded corners for the container */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for more depth */
+  max-width: 1000px; /* Wider container */
+  margin: 30px auto; /* Centered container with increased margin */
+}
+
+/* Heading styling */
+.my-events h2 {
+  font-size: 28px; /* Larger font size for the heading */
+  margin-bottom: 30px; /* Increased spacing below the heading */
+  color: #333; /* Darker color for better readability */
+  text-align: center; /* Centered heading */
+  font-weight: 600; /* Semi-bold font weight */
+  letter-spacing: 1px; /* Slightly increased letter spacing */
+}
+
+/* Table styling */
+.my-events table {
+  width: 100%;
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+/* Table header styling */
+.my-events th {
+  background-color: #f7c948; /* Bright yellow for the header */
+  color: #333; /* Dark text for contrast */
+  padding: 15px; /* Slightly increased padding */
+  text-align: left; /* Left-align text */
+  font-weight: 600; /* Semi-bold text for the header */
+  border-top-left-radius: 12px; /* Rounded top-left corners */
+  border-top-right-radius: 12px; /* Rounded top-right corners */
+}
+
+/* Table cell styling */
+.my-events th,
+.my-events td {
+  padding: 15px; /* Consistent padding for all cells */
+  text-align: left; /* Left-align text */
+  border-bottom: 1px solid #ccc; /* Light grey border for rows */
+}
+
+/* Table row hover effect */
+.my-events tr:hover {
+  background-color: #e9e9e9; /* Light grey background on hover */
+}
+
+/* Table data cell styling */
+.my-events td {
+  color: #333; /* Dark text color for readability */
+}
+
+/* Additional row styling */
+.my-events tr:nth-child(even) {
+  background-color: #f4f4f4; /* Very light ash color for even rows */
+}
+
+.my-events tr:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd rows */
+}
